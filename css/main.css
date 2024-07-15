@@ -1,0 +1,151 @@
+section {
+  background-color: #f7ecde;
+  height: 100%;
+  padding-bottom: 70px;
+}
+.container {
+  /* height: 100vh; */
+}
+h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 50px;
+  color: rgb(53, 46, 40);
+  font-weight: 500;
+  position: relative;
+  width: fit-content;
+  margin: auto;
+  z-index: 10000;
+  /* background-color: antiquewhite; */
+}
+
+h1::after {
+  content: "";
+  background-color: #fec260;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 70%;
+  bottom: 0;
+  z-index: -2;
+  transition: 0.3s;
+}
+h1:hover::after {
+  top: 30%;
+}
+
+.middle-site {
+  /* background-color: aquamarine; */
+  padding: 25px;
+  border-top: 2px dotted black;
+  border-bottom: 2px dotted black;
+  margin-top: 60px;
+}
+.middle-site .title {
+  font-family: "Righteous", sans-serif;
+  font-weight: 500;
+  color: rgb(33, 37, 41);
+  font-size: 25px;
+  /* width: fit-content; */
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  color: transparent;
+  background-clip: text;
+  margin-bottom: 30px;
+}
+/* .middle-site .title  */
+
+.middle-site label {
+  font-family: "PT Sans Caption", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+input {
+  font-family: "PT Sans Caption", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 10px;
+  padding: 4px;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+.middle-site button {
+  /* background-color: #bb4120; */
+  padding: 7px 50px;
+}
+input:focus {
+  outline: none;
+  border: 1px solid #fec260;
+  box-shadow: 0px 0px 5px #fec260;
+}
+
+.table {
+  background-color: #3ca55c;
+  margin-top: 30px;
+  font-family: "PT Sans Caption", sans-serif;
+  /* margin-bottom: 50px; */
+}
+
+th {
+  font-size: 16px;
+  font-weight: 700;
+}
+td {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.table button {
+  padding: 7px 15px;
+  border-radius: 7px;
+  border: none;
+  color: white;
+}
+
+.visit {
+  background-color: #8a9e23;
+}
+.delete {
+  background-color: #dc3545;
+}
+.visit:hover {
+  background-color: #7b8f19;
+}
+.delete:hover {
+  background-color: #c52b3a;
+}
+
+.layer {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.circle {
+  width: 20px;
+  height: 20px;
+  background-color: #3ca55c;
+  margin: 5px;
+  border-radius: 50%;
+}
+.mess-error {
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  color: rgb(53, 46, 40);
+  font-size: 21px;
+}
+.single-mess {
+  font-family: "PT Sans Caption", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.single-mess span {
+  color: #c52b3a;
+}
+
+.close-icon {
+  cursor: pointer;
+}
+.content-error {
+  width: 500px;
+}

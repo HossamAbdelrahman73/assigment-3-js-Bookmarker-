@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="position-relative">
+    <section>
+      <div class="container pt-2">
+        <h1 class="my-5 text-center">Bookmarker</h1>
+        <div class="middle-site">
+          <h2 class="text-center title">
+            <span><i class="fa-solid fa-bookmark"></i></span> Bookmark your
+            favorite sites <span><i class="fa-solid fa-bookmark"></i></span>
+          </h2>
+          <label for="">
+            <span><i class="fa-solid fa-book-bookmark pe-2"></i></span> Site
+            Name
+          </label>
+          <input
+            type="text"
+            placeholder="Bookmark Name"
+            name=""
+            id=""
+            class="siteName form-control"
+          />
+          <label for=""
+            ><span><i class="fa-solid fa-link pe-2"></i></span> Site URL
+          </label>
+          <input
+            type="url"
+            class="form-control"
+            placeholder="Website URL"
+            name=""
+            id=""
+          />
+          <div class="text-center">
+            <div class="alert alert-danger py-2 my-2 d-none">
+              This url in The Table of Websites
+            </div>
+            <button class="btn btn-danger" id="submit">Submit</button>
+          </div>
+        </div>
+
+        <table class="table text-center mb-5">
+          <thead>
+            <tr>
+              <th scope="col">Index</th>
+              <th scope="col">Website Name</th>
+              <th scope="col">Visit</th>
+              <th scope="col">Delete</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <div
+      class="layer position-absolute top-0 start-0 end-0 bottom-0 d-flex justify-content-center align-items-center d-none"
+    >
+      <div class="content-error bg-white p-4 border rounded-3">
+        <div
+          class="line-1 d-flex justify-content-between align-items-center mb-4"
+        >
+          <div class="d-flex">
+            <div class="circle bg-danger"></div>
+            <div class="circle bg-warning"></div>
+            <div class="circle bg-success"></div>
+          </div>
+          <div class="close-icon">
+            <i class="fa-solid fa-xmark fs-5"></i>
+          </div>
+        </div>
+        <p class="mess-error">
+          Site Name or Url is not valid, Please follow the rules below :
+        </p>
+        <p class="single-mess">
+          <span><i class="fa-regular fa-circle-right pe-1"></i></span> Site name
+          must contain at least 3 characters
+        </p>
+        <p class="single-mess">
+          <span><i class="fa-regular fa-circle-right pe-1"></i></span> Site URL
+          must be a valid one
+        </p>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
